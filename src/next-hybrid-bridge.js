@@ -11,6 +11,14 @@
   var deviceIsAndroid = USER_AGENT.indexOf('Android') > 0 && !deviceIsWindowsPhone;
 
   var NxHybridBridge = nx.declare('nx.HybridBridge', {
+    statics:{
+      setup: function(inString,inCallback){
+        var bridge = new NxHybridBridge(inString);
+        return new Promise(function(resolve){
+          bridge.setup(resolve);
+        });
+      }
+    },
     methods:{
       init: function(inAndroidBridgeStr){
         this.androidBridge = inAndroidBridgeStr || ANDROID_BRIDGE;
