@@ -17,7 +17,4 @@ NxHybridBridge.setup((bridge)=>{
 
 ## resources:
 + https://github.com/marcuswestin/WebViewJavascriptBridge
-
-
-## todos:
-- [ ] unit test case
++ https://juejin.im/post/5b7efb2ee51d45388b6af96c
